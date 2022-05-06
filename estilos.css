@@ -1,0 +1,281 @@
+header{    
+    position: fixed;    
+    width: 100%;     
+}
+
+.presentacion{
+    width: 100%;    
+    display: flex;    
+    justify-content: center;
+    height: calc(100vh - 65px); 
+    background-color: #1d5fec;
+    color: white;     
+}
+
+.presentacion .caja-central{
+    margin-top: 10%;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;          
+}
+
+.presentacion .caja-central .caja-cara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #6578e9;    
+}
+
+.presentacion .caja-central .caja-cara .cara{
+    border-radius: 500px;   
+    height: 200px;
+}
+
+.presentacion .caja-central .caja-presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: white;
+    color: #303030;   
+}
+
+.presentacion .caja-central .caja-presentacion h2{
+    margin-top: 20px;
+    margin-left: 10px; 
+    font-weight: bold;       
+}
+
+.presentacion .caja-central .caja-presentacion .nota-presentacion{
+    padding: 10px;
+}
+
+.presentacion .caja-central .caja-presentacion .dibujo{
+    max-width: 50%;            
+}
+
+.sobre-mi h2{
+    padding: 20px; 
+    font-weight: bold;   
+} 
+
+.nota-sobre-mi{
+    width:100%;
+}
+
+.aptitudes h2{
+    font-weight: bold; 
+}
+
+
+.tecnologias{    
+    height: 200px;
+    width: 100px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #303030;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.tech-list{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.tech{
+    height: 90px;
+    padding: 10px;
+}
+
+.estudios h2{
+    padding: 20px;
+    font-weight: bold;
+}
+
+form{
+    flex-direction: row;        
+}
+
+.caracteristicas{
+    width: 100%;       
+    height: 500px; 
+    background-color: #1d5fec;
+    color: white; 
+    text-align: center; 
+    align-items: center;
+    display: flex;
+    flex-direction: column;     
+}
+
+form h2{
+    margin:0;
+    padding: 20px 20px;   
+    font-weight: bold;     
+}
+
+
+
+.caracteristicas .formulario1 .form-control{
+    padding: 10px;
+    margin: 10px;
+    width: 195px;      
+}
+
+
+.caracteristicas .area-de-texto textarea{
+    background-color: #fbfbfb; 
+    width: 605px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px;    
+    margin-top: 25px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 12px; 
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.caracteristicas .enviar{
+    padding: 5px 50px;
+    align-items: center;
+    background-color:rgb(167, 163, 163);
+    color:rgb(5, 5, 5);   
+}
+
+ 
+footer{
+    background-color: #424242;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #F2F2F2;
+    height: 250px;
+    padding-top: 10px;  
+}
+
+footer h2{
+    font-weight: bold;
+}
+
+footer .redes{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;            
+}
+
+
+footer .redes .red-social {
+    height: 70px;        
+    flex-direction: row;     
+}
+
+
+footer .estilo{
+    color:#F2F2F2;
+    text-decoration: none;
+    padding-bottom: 5px;  
+}
+
+
+
+
+@media (max-width: 1200px) {
+
+    .presentacion{
+        height: auto;
+        padding: 0 5px 5px 5px;
+    }  
+
+    .presentacion .caja-central{
+        width: 50%;
+        height: 50%;
+        flex-direction: column;
+        }
+      
+    .presentacion .caja-central .caja-cara{
+        width: 100%;
+        height: 50%; 
+    }
+    .presentacion .caja-central .caja-presentacion{
+        width: 100%;
+        height:100%;
+        align-items: flex-start; 
+        margin-bottom:15px;      
+    }    
+
+    .caracteristicas .btn-light{       
+        align-items: center;    
+        margin-bottom: 10px;       
+    }   
+   
+    .caracteristicas{
+        height: auto;
+    }
+
+    .caracteristicas .area-de-texto textarea{        
+        width: 520px;     
+    }
+   
+    footer .redes .red-social {
+        height: 50px;        
+        flex-direction: row;     
+    }
+   
+}
+
+
+@media (max-width: 576px) {
+
+    .presentacion{
+        font-size: 80%;
+    }
+    
+    .presentacion .caja-central{
+        width: 25%;
+        height: 25%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+      
+    .presentacion .caja-central .caja-cara{
+        width: 300px;
+        height: 100%;        
+        margin-top:20px; 
+        
+    }
+
+    .presentacion .caja-central .caja-presentacion{
+        width: 300px;
+        height:100%;        
+        margin-bottom:15px; 
+        
+    }
+    
+    .presentacion .caja-central .caja-cara .cara{
+        width: 50%;
+        height: 50%;  
+    }
+
+    .caracteristicas .area-de-texto textarea{        
+        width: 350px;     
+    }
+
+    footer .redes .red-social {
+        height: 30px;        
+        flex-direction: row;     
+    }
+
+}
